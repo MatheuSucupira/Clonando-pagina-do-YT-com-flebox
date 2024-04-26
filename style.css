@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 242, 242);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*----------HEADER*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px black;
+}
+
+.header .icon {
+    margin-left: 10px;
+}
+
+.header .icon img {
+    margin: 0 10px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header .icon #button-menu {
+    position: relative;
+    top: 2px;
+}
+
+.header .search-box {
+    display: flex;
+}
+
+.header .search-box .wrap-search {
+    position: relative;
+}
+
+.header .search-box .wrap-search #lupa {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.header .search-box .text-box input {
+    width: 350px;
+    height: 40px;
+    border: solid 1px rgba(204, 204, 204, 1);
+}
+
+.header .search-box .text-box input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.header .profile {
+    display: flex;
+    width: 120px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .profile .wrap-profile #_profile {
+    width: 34px;
+    border-radius: 50%;
+}
+
+
+
+/*----------MAIN*/
+
+
+
+.container {
+    padding: 90px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content-primary {
+    width: 100%;
+    margin: 0 50px;
+    font-family: Roboto;
+}
+
+.container .content-primary iframe {
+    width: 100%;
+    height: 49%;
+}
+
+
+
+/*----------CONTENT PRIMARY*/
+
+
+
+.container .content-primary .name-video {
+    margin: 20px 0;
+}
+
+.container .content-primary .info-video {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container .content-primary .info-video .logo-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+}
+
+.container .content-primary .info-video .logo-profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container .content-primary .subscribe {
+    background-color: red;
+    width: 157px;
+    height: 45px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.container .content-primary .subscribe a {
+    color: white;
+    display: block;
+}
+
+.container .content-primary .like {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content-primary .dislike {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content-primary .dislike .dislike-button a {
+    position: relative;
+    top: 3px;
+}
+
+.container .content-primary .share {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content-primary .download {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content-primary .views {
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.description {
+    width: 100%;
+    color: rgba(81, 81, 81, 1);
+}
+
+.description span{
+    color: blue;
+}
+
+
+
+
+/*----------CONTENT SECONDARY*/
+
+
+/*-------VIDEO SESSION*/
+
+.container .content-secondary {
+    width:32%;
+}
+
+.container .content-secondary .content {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.container .content-secondary .content .video {
+    width: 50%;
+    height: 10%;
+}
+
+.container .content-secondary .content .video a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*-------INFO SESSION*/
+
+.container .content-secondary .content .wrap-info-video {
+    width: 60%;
+    height: 10%;
+    margin: 0 10px;
+}
+
+.container .content-secondary .content .wrap-name-video {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.container .content-secondary .content .wrap-name-channel {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.container .content-secondary .content .wrap-views {
+    font-size: 15px;
+}
